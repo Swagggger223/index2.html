@@ -2,7 +2,7 @@
 @import "compass/reset";
 @import "compass";
 
-$bgColor: #f7fbff;
+$bgColor: #475766;
 
 $fontColor: #616c78;
 $fontColorLight: #939fab;
@@ -13,7 +13,7 @@ $borderColor: #a3b1bf;
 $borderColorActive: #0080ff;
 
 $fontFamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$fontFamilyCustom: "Cabin Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$fontFamilyCustom: Capriola, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 @mixin png-image-set($image){
 	@include image-set($image, "png");
@@ -56,10 +56,82 @@ $fontFamilyCustom: "Cabin Condensed", "Helvetica Neue", Helvetica, Arial, sans-s
 
 /* END OF SASS & COMPASS SETUP */
 
+/* entry */
+
+.entry {
+	@include transition(background 0.3s 0s linear, top 1s 0.1s linear);
+	background: rgba(black,0.75);
+	bottom: 0;
+	color: $fontColor;
+	font-family: $fontFamily;
+	left: 0;
+	line-height: 1.4em;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 100;
+	
+	&.joined {
+		background: rgba(black,0);
+		top: 200%;
+	}
+	
+	.join {
+		@include background-image(linear-gradient(#ffffff, #ffffff 50%, #f7fbff));
+		@include border-radius(5px);
+		@include box-shadow(rgba(black,0.5) 0 2px 4px, rgba(black,0.5) 0 0 8px);
+		left: 50%;
+		margin: -116px 0 0 -100px;
+		position: absolute;
+		top: 50%;
+		width: 200px;
+		z-index: 100;
+			
+		.logo {
+			@include image-set('logo-large','png');
+			background-position: 0 0;
+			background-repeat: no-repeat;
+			color: $fontColorDark;
+			display: block;
+			font-family: $fontFamilyCustom;
+			font-size: 20px;
+			letter-spacing: -0.1em;
+			line-height: 32px;
+			margin: 24px auto 12px;
+			padding-top: 141px;
+			text-align: center;
+			text-shadow: 0 1px 0 #fff;
+			width: 157px;
+		}
+			
+		input#username {
+			@include border-radius(4px);
+			@include box-shadow(rgba(black,0.05) 0 1px 1px inset, #fff 0 1px 0);
+			background: #ffffff;
+			border: 1px solid $borderColor;
+			font-family: $fontFamily;
+			font-size: 13px;
+			height: 16px;
+			left: 16px;
+			line-height: 16px;
+			margin: 0 16px 16px;
+			padding: 5px 10px;
+						
+			&:active, &:focus {
+				@include box-shadow(rgba(black,0.05) 0 1px 1px inset, rgba($borderColorActive,0.5) 0 0 8px);
+				border-color: $borderColorActive;
+				outline: none;	
+			}
+			
+		}
+		
+	}
+	
+}
+
 /* interface */
 
 .if {
-	@include background-image(linear-gradient($bgColor, #ffffff 50%, #ffffff));
 	background: $bgColor;
 	bottom: 0;
 	color: $fontColor;
