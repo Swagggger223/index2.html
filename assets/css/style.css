@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Cabin+Condensed:400,600);
 /*! normalize.css http://github.com/necolas/normalize.css */
 
 /* =============================================================================
@@ -500,3 +501,234 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+/*
+Dribbble Follow Button by @thomweerd.
+Free to use and abuse.
+*/
+
+.dribbble-follow-button {
+	display: inline-block;
+}
+
+.dribbble-follow-button .label, .dribbble-follow-button .count {
+    font: bold 11px/18px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+         -o-border-radius: 3px;
+            border-radius: 3px;
+
+	-webkit-font-smoothing: subpixel-antialiased;
+	   -moz-font-smoothing: subpixel-antialiased;
+	        font-smoothing: subpixel-antialiased;
+}
+
+.dribbble-follow-button .label {
+    padding: 0 3px 0 1px;
+    white-space: nowrap;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+    background: #f8f8f8;
+    
+    background: -webkit-linear-gradient(left top, left bottom, from(white), to(#dedede));
+    background: -webkit-linear-gradient(top, white, #dedede);
+       background: -moz-linear-gradient(top, white, #dedede);
+         background: -o-linear-gradient(top, white, #dedede);
+            background: linear-gradient(top, white, #dedede);
+}
+
+.dribbble-follow-button .label i {
+    height: 18px;
+    width: 18px;
+    float: left;
+    background: url(icon.png) no-repeat top left;
+}
+
+.dribbble-follow-button .label:hover {
+    border-color: #bbb;
+    background: #f8f8f8;
+    
+    background: -webkit-linear-gradient(left top, left bottom, from(#f8f8f8), to(#dbdbdb));
+    background: -webkit-linear-gradient(top, #f8f8f8, #dbdbdb);
+       background: -moz-linear-gradient(top, #f8f8f8, #dbdbdb);
+         background: -o-linear-gradient(top, #f8f8f8, #dbdbdb);
+            background: linear-gradient(top, #f8f8f8, #dbdbdb);
+}
+
+.dribbble-follow-button .label:active {            
+	-webkit-box-shadow: 0 1px 5px rgba(0,0,0,.15) inset;
+	   -moz-box-shadow: 0 1px 5px rgba(0,0,0,.15) inset;
+	     -o-box-shadow: 0 1px 5px rgba(0,0,0,.15) inset;
+	        box-shadow: 0 1px 5px rgba(0,0,0,.15) inset;
+}
+
+.dribbble-follow-button .count {
+    margin-left: 5px;
+    padding: 0 3px;
+    color: #333;
+    border-color: #bbb;
+    font-weight: normal;
+    background: white;
+}
+
+.dribbble-follow-button .count:hover {
+    text-decoration: underline;
+}
+
+.dribbble-follow-button .count > * {
+	top: 50%;
+	left: 0;
+	margin: -4px 0 0 -4px;
+	border: 4px solid transparent;
+	border-right-color: #aaa;
+	border-left: 0;
+	position: absolute;
+}
+
+.dribbble-follow-button .count u {
+    margin-left: -3px;
+    border-right-color: white;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	.dribbble-follow-button .label i {
+		background-position: top right;
+		background-size: 37px 18px;
+	}
+}
+html {
+  height: 100%;
+  overflow: auto; }
+
+body {
+  background-image: -webkit-radial-gradient(50% 50%, ellipse cover, white, white 50%, #edf6ff);
+  background-image: -moz-radial-gradient(50% 50%, ellipse cover, white, white 50%, #edf6ff);
+  background-image: -ms-radial-gradient(50% 50%, ellipse cover, white, white 50%, #edf6ff);
+  background-image: -o-radial-gradient(50% 50%, ellipse cover, white, white 50%, #edf6ff);
+  background-image: radial-gradient(50% 50%, ellipse cover, white, white 50%, #edf6ff);
+  bottom: 0;
+  color: #616c78;
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  left: 0;
+  min-width: 860px;
+  overflow: auto;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #313b45;
+  line-height: 1.5em; }
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: #313b45; }
+    h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+      color: #313b45;
+      text-decoration: none; }
+
+h1 {
+  font-size: 2em; }
+
+h2 {
+  font-size: 1.75em; }
+
+h3 {
+  font-size: 1.5em; }
+
+h4 {
+  font-size: 1.25em; }
+
+h5 {
+  font-size: 1.10em; }
+
+h6 {
+  font-size: 1em; }
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0.5em 0 1em; }
+
+a {
+  color: #297acc;
+  text-decoration: none; }
+  a:hover {
+    color: #256db7;
+    text-decoration: underline; }
+
+/* build */
+.wrap {
+  margin: 5em auto;
+  position: relative;
+  width: 500px;
+  /* header */ }
+  .wrap header {
+    position: relative;
+    height: 70px; }
+    .wrap header .avatar {
+      border-radius: 35px;
+      height: 70px;
+      left: -90px;
+      position: absolute;
+      top: 0;
+      width: 70px; }
+    .wrap header .name {
+      color: #313b45;
+      font-family: "Cabin Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 24px;
+      line-height: 32px;
+      padding-top: 11px; }
+    .wrap header .bio {
+      padding: 0; }
+  .wrap .sidebar {
+    left: -180px;
+    position: absolute;
+    text-align: right;
+    top: 118px;
+    width: 160px; }
+    .wrap .sidebar .articles .articles-title {
+      font-size: 0.8em; }
+    .wrap .sidebar .articles ul li {
+      font-size: 0.8em; }
+  .wrap .articles .articles-title {
+    font-size: 0.8em;
+    padding-bottom: 0.5em; }
+  .wrap .articles ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .wrap .articles ul li {
+      font-size: 1.2em;
+      line-height: 1.5em;
+      padding: 0.2em 0; }
+  .wrap .content {
+    padding-top: 40px; }
+
+/* default */
+.default .sidebar {
+  display: none; }
+
+/* @stripe */
+.atStripe {
+  background-image: -webkit-linear-gradient(#233041, #3c4758);
+  background-image: -moz-linear-gradient(#233041, #3c4758);
+  background-image: -ms-linear-gradient(#233041, #3c4758);
+  background-image: -o-linear-gradient(#233041, #3c4758);
+  background-image: linear-gradient(#233041, #3c4758);
+  color: #aeb6c2; }
+  .atStripe h1, .atStripe h2, .atStripe h3, .atStripe h4, .atStripe h5, .atStripe h6 {
+    color: #fff; }
+  .atStripe h1, .atStripe h2, .atStripe h3, .atStripe h4, .atStripe h5, .atStripe h6, .atStripe p, .atStripe li {
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); }
+  .atStripe a {
+    color: #9babc2; }
+    .atStripe a:hover {
+      color: #fff; }
+  .atStripe .content h3 {
+    display: none; }
+  .atStripe .content img {
+    text-align: center;
+    width: 290px; }
