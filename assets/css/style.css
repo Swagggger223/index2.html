@@ -681,6 +681,8 @@ p {
       font-size: 24px;
       line-height: 32px;
       padding-top: 11px; }
+      .wrap header .name a:hover {
+        color: #297acc; }
     .wrap header .bio {
       padding: 0; }
   .wrap .sidebar {
@@ -725,8 +727,14 @@ p {
       color: #fff; }
   .atStripe h1, .atStripe h2, .atStripe h3, .atStripe h4, .atStripe h5, .atStripe h6 {
     color: #fff; }
+    .atStripe h1 a, .atStripe h2 a, .atStripe h3 a, .atStripe h4 a, .atStripe h5 a, .atStripe h6 a {
+      color: #fff; }
+      .atStripe h1 a:hover, .atStripe h2 a:hover, .atStripe h3 a:hover, .atStripe h4 a:hover, .atStripe h5 a:hover, .atStripe h6 a:hover {
+        color: #9babc2; }
   .atStripe h1, .atStripe h2, .atStripe h3, .atStripe h4, .atStripe h5, .atStripe h6, .atStripe p, .atStripe li {
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); }
+  .atStripe header .name a:hover {
+    color: #9babc2; }
   .atStripe .content h3 {
     display: none; }
   .atStripe .content img {
