@@ -36,11 +36,11 @@
 		<link href="https://si0.twimg.com/profile_images/3160658910/538d2468c1c076825372ba21d25dc2c6_normal.jpeg" rel="shortcut icon">
 		<link href="https://si0.twimg.com/profile_images/3160658910/538d2468c1c076825372ba21d25dc2c6.jpeg" rel="apple-touch-icon">
 		
-		<title>@stripe</title>
+		<title>Hammer Builds on GitHub</title>
 	  
 	</head>
 	
-	<body class="atStripe">
+	<body class="hammer-github">
 		
 		<div class="wrap">
 		
@@ -54,19 +54,31 @@
 	
 
 
-<h3 id="title---">@stripe</h3>
+<h3 id="title---">Hammer Builds on GitHub</h3>
 
-<p><img src="/assets/imgs/articles/stripe-logo.png" alt="Stripe's Logo" title="Stripe's Logo" /></p>
+<p>I wanted to use Hammer to compile my files but also use their HTML includes, just to give me a simple way to build my site. For now it&#8217;s more than enough but I may move to something like Jekyll in the future. The problem with this is when Hammer compiles your site into the Build folder it deletes everything from the folder then inserts the newly compiled files. This means if you setup the Build directory as a repository you&#8217;re going to find it loses the git files.</p>
 
-<p>I recently joined the guys at <a href="http://stripe.com">Stripe</a> to become part of their design team. This is an opportunity I was very happy to grab with both hands because Stripe has been a company I&#8217;ve admired for a long time. Its name often came up in hypothetical conversations between friends of where we&#8217;d see ourselves working if we didn&#8217;t have our own startups.</p>
+<p>Which is perfectly acceptable for Hammer to do, after all they are just making sure there are no unwanted files in your Build folder that you may of deleted from the parent folder. One issue is Hammer doesn&#8217;t give you any sort of preferences panel or project settings in order to set extensions or files as ignored. It seems like such a simple little feature they could add but for now I needed a work around.</p>
 
-<p>I felt this was also a great time to update my personal site and move away from Tumblr. Tumblr has been great over the years but now it just doesn&#8217;t suit my needs. I&#8217;ve lost interest in doing any blogging but want something more flexible when I do want to write something.</p>
+<h4 id="the-simple-fix">The Simple Fix</h4>
 
-<p>My solution has been to switch over to a public GitHub repository and stick to a simple HTML+CSS setup. I&#8217;ll be using Hammer to make the managing of multiple pages easier and will be trying out Bourbon for the first time (only used Compass up until now).</p>
+<p>It really is pretty straight forward, maybe just a lot of steps but overall it&#8217;s easy. After all, I was able to work it out and I&#8217;m a dumbass.</p>
 
-<p>As for the blog entries themselves I&#8217;ll just be using Markdown. Hammer makes it super easy to compile Markdown files into HTML and include them within HTML pages. This also gives me some room for fancy tricks in the future for individual entries.</p>
+<p>You&#8217;re going to want to setup your Hammer project as you normally would (if you haven&#8217;t done so already). Once this is done it should compile into the Build folder. Once this is done quit Hammer, don&#8217;t just close it as it will still compile in the background. Now navigate to the Build folder and delete all of its contents.</p>
 
-<p>For now though be sure to follow me on <a href="http://dribbble.com/awfy">Dribbble</a> to see some of the things I&#8217;m working on over at Stripe.</p>
+<p>Now you&#8217;ll have a nice empty, uncompiled folder of nothing. Perfect. Time to setup your git repository in the Build folder (not the parent folder!!!). This will allow you to put only the compiled files onto your chosen platform (GitHub in this instance). Once you have cloned your remote repositry into this folder you will have a hidden .git folder inside Build.</p>
+
+<p>We will need to be able to see this folder in order to give it the required permissions. You have two options, either make hidden folders visible or just open up Finder and go to <em>Go</em> then <em>Go to Folder&#8230;</em> and enter the following;</p>
+
+<blockquote>
+  <p><code>/Users/[Wherever your project is]/Build/.git</code></p>
+</blockquote>
+
+<p>This should take you to the folder then all you want to do is right-click the folder name and then click <em>Get Info</em>. In here you will have a section called <em>Sharing &amp; Permissions</em>. You&#8217;ll want to set your permissions (normally your name followed by me in brackets) to <em>Write only (Drop Box)</em></p>
+
+<p>Now the folder should be protected from Hammer deleting it when trying to build but will also allow git to write to that folder. So just reopen Hammer and let it do it&#8217;s thing. Now you should be able to use your Build directory as the main directory when pushing to the likes of GitHub.</p>
+
+<p>And that is how this very blog is made&#8230; At least for now.</p>
 			</section>
 					
 		</div>
