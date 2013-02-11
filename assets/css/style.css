@@ -703,38 +703,47 @@ ul li, ol li {
         line-height: 1.5em;
         padding: 0.2em 0; }
 
+/* dark-theme */
+.dark-theme {
+  color: #aeb6c2; }
+  .dark-theme a {
+    color: #9babc2; }
+    .dark-theme a:hover {
+      color: #fff; }
+  .dark-theme h1, .dark-theme h2, .dark-theme h3, .dark-theme h4, .dark-theme h5, .dark-theme h6 {
+    color: #fff; }
+    .dark-theme h1 a, .dark-theme h2 a, .dark-theme h3 a, .dark-theme h4 a, .dark-theme h5 a, .dark-theme h6 a {
+      color: #fff; }
+      .dark-theme h1 a:hover, .dark-theme h2 a:hover, .dark-theme h3 a:hover, .dark-theme h4 a:hover, .dark-theme h5 a:hover, .dark-theme h6 a:hover {
+        color: #9babc2; }
+  .dark-theme h1, .dark-theme h2, .dark-theme h3, .dark-theme h4, .dark-theme h5, .dark-theme h6, .dark-theme p, .dark-theme li {
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); }
+  .dark-theme header .name a:hover {
+    color: #9babc2; }
+
 /* default */
 .default .sidebar {
   display: none; }
 
 /* @stripe */
-.atStripe {
+.at-stripe {
   background-image: -webkit-linear-gradient(#233041, #3c4758);
   background-image: -moz-linear-gradient(#233041, #3c4758);
   background-image: -ms-linear-gradient(#233041, #3c4758);
   background-image: -o-linear-gradient(#233041, #3c4758);
-  background-image: linear-gradient(#233041, #3c4758);
-  color: #aeb6c2; }
-  .atStripe a {
-    color: #9babc2; }
-    .atStripe a:hover {
-      color: #fff; }
-  .atStripe h1, .atStripe h2, .atStripe h3, .atStripe h4, .atStripe h5, .atStripe h6 {
-    color: #fff; }
-    .atStripe h1 a, .atStripe h2 a, .atStripe h3 a, .atStripe h4 a, .atStripe h5 a, .atStripe h6 a {
-      color: #fff; }
-      .atStripe h1 a:hover, .atStripe h2 a:hover, .atStripe h3 a:hover, .atStripe h4 a:hover, .atStripe h5 a:hover, .atStripe h6 a:hover {
-        color: #9babc2; }
-  .atStripe h1, .atStripe h2, .atStripe h3, .atStripe h4, .atStripe h5, .atStripe h6, .atStripe p, .atStripe li {
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); }
-  .atStripe header .name a:hover {
-    color: #9babc2; }
-  .atStripe .content h3 {
+  background-image: linear-gradient(#233041, #3c4758); }
+  .at-stripe .content h3 {
     display: none; }
-  .atStripe .content img {
+  .at-stripe .content img {
     width: 290px; }
 
 /* facebook-messages */
-.facebook-messages .content img {
-  margin-left: -84px;
-  width: 668px; }
+.facebook-messages {
+  background-image: -webkit-linear-gradient(#2d4373, #3b5998);
+  background-image: -moz-linear-gradient(#2d4373, #3b5998);
+  background-image: -ms-linear-gradient(#2d4373, #3b5998);
+  background-image: -o-linear-gradient(#2d4373, #3b5998);
+  background-image: linear-gradient(#2d4373, #3b5998); }
+  .facebook-messages .content img {
+    margin-left: -84px;
+    width: 668px; }
