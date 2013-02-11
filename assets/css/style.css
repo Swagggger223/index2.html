@@ -732,5 +732,9 @@ ul li, ol li {
   .atStripe .content h3 {
     display: none; }
   .atStripe .content img {
-    text-align: center;
     width: 290px; }
+
+/* facebook-messages */
+.facebook-messages .content img {
+  margin-left: -84px;
+  width: 668px; }
