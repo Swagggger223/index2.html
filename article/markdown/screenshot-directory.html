@@ -1,0 +1,18 @@
+
+
+
+<h3 id="title---">Change Screenshot Directory on Mac</h3>
+
+<p>I wanted my screenshots I take on my Mac to be saved to my Downloads folder. For some reason it was bugging me that they were filling up my Desktop. Also handy since I keep my Downloads folder in my dock, it means I have quick access to my latest screenshots.</p>
+
+<p>So here&#8217;s how to do it, simply type this command into Terminal whilst replacing the <code>~/the/folder/you/want</code> with the location of your desired folder.</p>
+
+<p><code>$ defaults write com.apple.screencapture location ~/the/folder/you/want</code></p>
+
+<p>Once you&#8217;re sure you have the folder you want then run this command to make the change stick;</p>
+
+<p><code>killall SystemUIServer</code></p>
+
+<p>All done.</p>
+
+<p>Surprisingly I haven&#8217;t found a way to do it which didn&#8217;t involved a couple of Terminal commands. Seems like something Apple should have included in the preferences for Finder.</p>

@@ -29,50 +29,46 @@
         <!-- /Hammer reload -->
       
 		
-		<link rel='stylesheet' href='assets/css/style.css'>
-		<script src='assets/js/jquery-1.8.3.min.js'></script>
-		<script src='assets/js/app.js'></script>
+		<link rel='stylesheet' href='../assets/css/style.css'>
+		<script src='../assets/js/jquery-1.8.3.min.js'></script>
+		<script src='../assets/js/app.js'></script>
 		
-		<link href="assets/favicon.ico" rel="shortcut icon">
-		<link href="assets/apple-touch-icon.png" rel="apple-touch-icon">
+		<link href="../assets/favicon.ico" rel="shortcut icon">
+		<link href="../assets/apple-touch-icon.png" rel="apple-touch-icon">
 		
-		<title>Greg Cooper</title>
+		<title>Change Screenshot Directory on Mac</title>
 	  
 	</head>
 	
-	<body class="default">
+	<body class="screenshot-directory">
 		
 		<div class="wrap">
 		
 			<header>
 				<img alt="Greg Cooper's Avatar" class="avatar" src="http://api.twitter.com/1/users/profile_image?screen_name=Awfy&size=bigger" />
-				<h1 class="name"><a class='current' href="index.html">Greg Cooper</a></h1>
+				<h1 class="name"><a href="../index.html">Greg Cooper</a></h1>
 				<p class="bio">Designer at <a href="http://stripe.com" target="_blank">Stripe</a></p>
 			</header>
 			
 			<section class="content">
+	
 
-	<section class="articles">
-	<h6 class="articles-title">Articles</h6>
-	<ul>
-  <li><a href="article/hammer-github.html">Hammer Builds on GitHub</a></li>
-  <li><a href="article/stripe.html">@stripe</a></li>
-  <li><a href="article/facebook-messages.html">Facebook Chat in Messages for Mac</a></li>
-  <li><a href="article/screenshot-directory.html">Change Screenshot Directory on Mac</a></li>
-</ul>
-	<!-- <ul class="articles-list">
-		<li class="article">
-			<a href="article/hammer-github.html">Hammer Builds on GitHub</a>
-		</li>
-		<li class="article">
-			<a href="article/stripe.html">@stripe</a>
-		</li>
-		<li class="article">
-			<a href="article/facebook-messages.html">Facebook Chat in Messages</a>
-		</li>
-	</ul> -->
-</section>
-  
+
+<h3 id="title---">Change Screenshot Directory on Mac</h3>
+
+<p>I wanted my screenshots I take on my Mac to be saved to my Downloads folder. For some reason it was bugging me that they were filling up my Desktop. Also handy since I keep my Downloads folder in my dock, it means I have quick access to my latest screenshots.</p>
+
+<p>So here&#8217;s how to do it, simply type this command into Terminal whilst replacing the <code>~/the/folder/you/want</code> with the location of your desired folder.</p>
+
+<p><code>$ defaults write com.apple.screencapture location ~/the/folder/you/want</code></p>
+
+<p>Once you&#8217;re sure you have the folder you want then run this command to make the change stick;</p>
+
+<p><code>killall SystemUIServer</code></p>
+
+<p>All done.</p>
+
+<p>Surprisingly I haven&#8217;t found a way to do it which didn&#8217;t involved a couple of Terminal commands. Seems like something Apple should have included in the preferences for Finder.</p>
 			</section>
 					
 		</div>
