@@ -659,6 +659,10 @@ p {
   margin: 0;
   padding: 0.5em 0 1em; }
 
+ul li, ol li {
+  line-height: 1.5em;
+  padding: 0.2em 0; }
+
 /* build */
 .wrap {
   margin: 5em auto;
@@ -685,29 +689,19 @@ p {
         color: #297acc; }
     .wrap header .bio {
       padding: 0; }
-  .wrap .sidebar {
-    left: -180px;
-    position: absolute;
-    text-align: right;
-    top: 118px;
-    width: 160px; }
-    .wrap .sidebar .articles .articles-title {
-      font-size: 0.8em; }
-    .wrap .sidebar .articles ul li {
-      font-size: 0.8em; }
-  .wrap .articles .articles-title {
-    font-size: 0.8em;
-    padding-bottom: 0.5em; }
-  .wrap .articles ul {
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-    .wrap .articles ul li {
-      font-size: 1.2em;
-      line-height: 1.5em;
-      padding: 0.2em 0; }
   .wrap .content {
     padding-top: 40px; }
+    .wrap .content .articles .articles-title {
+      font-size: 0.8em;
+      padding-bottom: 0.5em; }
+    .wrap .content .articles ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      .wrap .content .articles ul li {
+        font-size: 1.2em;
+        line-height: 1.5em;
+        padding: 0.2em 0; }
 
 /* default */
 .default .sidebar {
