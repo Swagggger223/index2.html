@@ -465,13 +465,16 @@ h3 {
   font-size: 1.5em; }
 
 h4 {
-  font-size: 1.25em; }
+  font-size: 1.25em;
+  padding-top: 1em; }
 
 h5 {
-  font-size: 1.10em; }
+  font-size: 1.10em;
+  padding-top: 1em; }
 
 h6 {
-  font-size: 1em; }
+  font-size: 1em;
+  padding-top: 1em; }
 
 p {
   line-height: 1.5em;
@@ -559,12 +562,14 @@ code {
         color: #e6ebf2; }
   .dark-theme h1, .dark-theme h2, .dark-theme h3, .dark-theme h4, .dark-theme h5, .dark-theme h6, .dark-theme p, .dark-theme li {
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); }
+  .dark-theme code {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05));
+    background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05));
+    background-image: -ms-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05));
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05)); }
   .dark-theme header .name a:hover {
     color: #e6ebf2; }
-
-/* default */
-.default .sidebar {
-  display: none; }
 
 /* hammer-github */
 .hammer-github {
