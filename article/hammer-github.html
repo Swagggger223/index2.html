@@ -59,9 +59,11 @@
 
 <h3 id="title---">Hammer Builds on GitHub</h3>
 
-<p>I wanted to use <a href="http://hammerformac.com">Hammer</a> to compile my files but also use their HTML includes, just to give me a simple way to build my site. For now it&#8217;s more than enough but I may move to something like Jekyll in the future. The problem with this is when Hammer compiles your site into the Build folder it deletes everything from the folder then inserts the newly compiled files. This means if you setup the Build directory as a repository you&#8217;re going to find it loses the git files.</p>
+<p>I wanted to use <a href="http://hammerformac.com">Hammer</a> to compile my files but also use their HTML includes, just to give me a simple way to build my site. For now it&#8217;s more than enough but I may move to something like Jekyll in the future. </p>
 
-<p>Which is perfectly acceptable for Hammer to do, after all they are just making sure there are no unwanted files in your Build folder that you may of deleted from the parent folder. One issue is Hammer doesn&#8217;t give you any sort of preferences panel or project settings in order to set extensions or files as ignored. It seems like such a simple little feature they could add but for now I needed a work around.</p>
+<p>The problem with this is when Hammer compiles your site into the Build folder it deletes everything from the folder then inserts the newly compiled files. This means if you setup the Build directory as a repository you&#8217;re going to find it loses the git files. Which is perfectly acceptable for Hammer to do, after all they are just making sure there are no unwanted files in your Build folder that you may of deleted from the parent folder. </p>
+
+<p>One issue is Hammer doesn&#8217;t give you any sort of preferences panel or project settings in order to set extensions or files as ignored. It seems like such a simple little feature they could add but for now I needed a work around.</p>
 
 <h4 id="the-simple-fix">The Simple Fix</h4>
 
@@ -84,6 +86,8 @@
 <p><img src="/assets/imgs/articles/hammer-info.png" alt="Get Info" title="Get Info" /></p>
 
 <p>Now the folder should be protected from Hammer deleting it when trying to build but will also allow git to write to that folder. So just reopen Hammer and let it do it&#8217;s thing. Now you should be able to use your Build directory as the main directory when pushing to the likes of GitHub.</p>
+
+<p>There are more direct ways to fix this problem using Terminal but this way meets my requirements.</p>
 
 <p>And that is how this very blog is made&#8230; At least for now.</p>
 			</section>
