@@ -19,7 +19,8 @@
                     for (var i = 0; i < links.length;i++) { 
                     var link = links[i]; 
                     if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
-                      link.href = link.href.split('?')[0]+'?'+(new Date()).getTime()
+                      href = link.href.replace(/((&|\?)hammer=)[^\&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
                     }
                   }
                 }
@@ -74,7 +75,11 @@
   <p><code>/Users/[Wherever your project is]/Build/.git</code></p>
 </blockquote>
 
+<p><img src="/assets/imgs/articles/hammer-menu.png" alt="Go to Folder" title="Go to Folder" /></p>
+
 <p>This should take you to the folder then all you want to do is right-click the folder name and then click <em>Get Info</em>. In here you will have a section called <em>Sharing &amp; Permissions</em>. You&#8217;ll want to set your permissions (normally your name followed by me in brackets) to <em>Write only (Drop Box)</em></p>
+
+<p><img src="/assets/imgs/articles/hammer-info.png" alt="Get Info" title="Get Info" /></p>
 
 <p>Now the folder should be protected from Hammer deleting it when trying to build but will also allow git to write to that folder. So just reopen Hammer and let it do it&#8217;s thing. Now you should be able to use your Build directory as the main directory when pushing to the likes of GitHub.</p>
 
