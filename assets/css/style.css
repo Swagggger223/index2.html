@@ -533,6 +533,10 @@ code {
         color: #297acc; }
     .wrap header .bio {
       padding: 0; }
+    .wrap header .twitter-follow-button {
+      position: absolute;
+      right: 0;
+      top: 18px; }
   .wrap .content {
     padding-top: 40px; }
     .wrap .content .articles .articles-title {
