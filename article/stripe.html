@@ -19,7 +19,7 @@
                     for (var i = 0; i < links.length;i++) { 
                     var link = links[i]; 
                     if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
-                      href = link.href.replace(/((&|\?)hammer=)[^\&]+/,''); 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
                       link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
                     }
                   }
@@ -46,9 +46,11 @@
 		<div class="wrap">
 		
 			<header>
-				<img alt="Greg Cooper's Avatar" class="avatar" src="http://api.twitter.com/1/users/profile_image?screen_name=Awfy&size=bigger" />
-				<h1 class="name"><a href="../index.html">Greg Cooper</a></h1>
-				<p class="bio">Designer at <a href="http://stripe.com" target="_blank">Stripe</a></p>
+				<img alt="Greg Cooper's Avatar" class="avatar" src="http://api.twitter.com/1/users/profile_image?screen_name=Awfy&size=original" />
+				<div class="text">
+					<h1 class="name"><a href="../index.html">Greg Cooper</a></h1>
+					<p class="bio">Designer at <a href="http://stripe.com" target="_blank">Stripe</a></p>
+				</div>
 				<a href="https://twitter.com/Awfy" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @Awfy</a>
 				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 			</header>
@@ -70,6 +72,7 @@
 <p>As for the blog entries themselves I&#8217;ll just be using Markdown. Hammer makes it super easy to compile Markdown files into HTML and include them within HTML pages. This also gives me some room for fancy tricks in the future for individual entries.</p>
 
 <p>For now though be sure to follow me on <a href="http://dribbble.com/awfy">Dribbble</a> to see some of the things I&#8217;m working on over at Stripe.</p>
+
 			</section>
 					
 		</div>

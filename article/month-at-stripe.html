@@ -19,7 +19,7 @@
                     for (var i = 0; i < links.length;i++) { 
                     var link = links[i]; 
                     if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
-                      href = link.href.replace(/((&|\?)hammer=)[^\&]+/,''); 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
                       link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
                     }
                   }
@@ -46,9 +46,11 @@
 		<div class="wrap">
 		
 			<header>
-				<img alt="Greg Cooper's Avatar" class="avatar" src="http://api.twitter.com/1/users/profile_image?screen_name=Awfy&size=bigger" />
-				<h1 class="name"><a href="../index.html">Greg Cooper</a></h1>
-				<p class="bio">Designer at <a href="http://stripe.com" target="_blank">Stripe</a></p>
+				<img alt="Greg Cooper's Avatar" class="avatar" src="http://api.twitter.com/1/users/profile_image?screen_name=Awfy&size=original" />
+				<div class="text">
+					<h1 class="name"><a href="../index.html">Greg Cooper</a></h1>
+					<p class="bio">Designer at <a href="http://stripe.com" target="_blank">Stripe</a></p>
+				</div>
 				<a href="https://twitter.com/Awfy" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @Awfy</a>
 				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 			</header>
@@ -81,6 +83,7 @@
 <p>You&#8217;ll want to leave <strong>Use SSL</strong> and <strong>Use Kerberos</strong> unchecked. If you don&#8217;t have a Facebook username yet then go to <a href="http://facebook.com/username">facebook.com/username</a> and set one for yourself.</p>
 
 <p>It really is as easy as that. Your Facebook contacts should be listed under Facebook Friends and it&#8217;s relatively nice to use. There aren&#8217;t any major set backs compared to the web interface that I&#8217;ve come across yet.</p>
+
 			</section>
 					
 		</div>
