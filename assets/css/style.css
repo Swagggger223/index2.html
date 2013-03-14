@@ -589,7 +589,7 @@ code {
 
 /* build */
 .wrap {
-  background: #f7fafc;
+  background: #fff;
   bottom: 0;
   left: 0;
   overflow: hidden;
@@ -673,11 +673,11 @@ code {
 
 /* hammer-github */
 .hammer-github .wrap {
-  background: #22252a url(../imgs/articles/hammer-bg.jpg) repeat 0 0;
-  color: #a8b3b9; }
-  .hammer-github .wrap .content img {
-    display: block;
-    margin: 0 auto; }
+  background: #22252a url(../imgs/articles/hammer-bg.jpg) repeat 0 0; }
+  .hammer-github .wrap .content {
+    color: #a8b3b9; }
+    .hammer-github .wrap .content img {
+      display: block; }
 
 /* @stripe */
 .at-stripe .wrap {
